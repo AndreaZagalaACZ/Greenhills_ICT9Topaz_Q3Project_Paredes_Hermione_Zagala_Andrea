@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>eSakayMo_Fare Matrix</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="matrix.html">Fare Matrix</a>
+            <a href="#">Schedule</a>
+            <input type="text" class="search" placeholder="Search...">
+            <button class="search-btn" style="color: rgb(190, 140, 240); font-weight: bold;" onclick="location.reload()">Search</button>
+            <a href="#registration.html" class="right">Book Now</a>
+            <button type="submit" class="create-btn">Create my account</button>
+        </nav>
+    </header>
+
+    <div class="fare-container">
+    <form>
+        <input type="number" id="base" placeholder="base fare (Php)" min="0" max="100"><br>
+        <input type="number" id="discount" placeholder="discount %" min="0" max="100"><br>
+        <input type="button" onclick="compute_fare()" value="Compute">
+    </form>
+    <div id="output"></div>
+    </div>
+
+    <footer class="footer">
+        <p> Hermione Therese Paredes, and Andrea C. Zagala | 9 - Topaz &copy; 2026.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
