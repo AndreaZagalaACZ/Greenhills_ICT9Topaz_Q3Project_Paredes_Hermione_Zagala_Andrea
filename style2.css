@@ -79,17 +79,9 @@ max-width: 800px;
 margin: auto;
 display: flex;
 flex-direction: column;
-justify-content: center;
-flex: 1;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-width: 60%;
-max-width: 800px;
-margin: 0 auto;    
+justify-content: center;  
 }
+
 form {
 display: flex;
 flex-direction: column;
