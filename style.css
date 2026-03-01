@@ -71,3 +71,116 @@ footer {
     color: #999;
     margin-top: auto;
 }
+
+ body {
+        background-image: url(https://art.ngfiles.com/images/6977000/6977632_2351606_blazedmissile_untitled-6977632.010cb9d4b1ac03571b1d994a706b6d53.webp?f1756022885);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        margin: 0;
+        }
+        html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #2e2e2e;
+    border: 1px solid #404040;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    float: none;
+}
+
+.navbar a {
+    color: #1e1e1e;
+    float: none;
+}
+
+.navbar a:hover {
+    color: #000;
+}
+
+.navbar a.right {
+    margin-left: auto;
+}
+
+.search {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-btn {
+    padding: 8px 15px;
+    background-color: #525252;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #404040;
+}
+
+.create-btn {
+    background-color: rgb(209, 164, 252);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background-color: rgb(190, 140, 240);
+}
+
+footer {
+    background-color: #2e2e2e6e;
+    border-top: 1px solid #404040;
+    padding: 20px;
+    text-align: center;
+    color: #999;
+    margin-top: auto;
+}
+.fare-container {
+background-color: rgb(190, 140, 240);;
+padding: 3rem;
+border-radius: 8px;
+width: 60%;
+max-width: 800px;
+margin: auto;
+align-self: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+form {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+input[type="number"] {
+padding: 1rem;
+font-size: 1.5rem;
+}
+input[type="button"] {
+padding: 1rem;
+background-color: rgb(140, 80, 200);
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 1.3rem;
+}
+ #output {
+ margin-top: 1rem;
+font-weight: bold;
+font-size: 1.2rem;
+}
