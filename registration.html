@@ -20,11 +20,8 @@
             border-radius: 5px; 
             text-align: center;
         }
-        p {
-            color:rgb(0, 255, 255);
-        }
         label {
-            color:rgb(0, 255, 255);
+            color: rgb(128, 38, 126);
             text-align: left;
         }
         .main-wrapper {
@@ -40,6 +37,9 @@
             border-radius: 50%;
             object-fit: cover;
         }
+        h1 {
+            color: rgb(128, 38, 126);
+        }
     </style>
 </head>
 <body>
@@ -51,18 +51,17 @@
         <button class="search-btn" style="color: rgb(190, 140, 240); font-weight: bold;" onclick="location.reload()">Search</button>
         <a href="registration.html" class="right">Book Now</a>
         <button type="submit" class="create-btn"><a href="registration.html">Create my account</a></button>
-    </nav>
+    </nav><br>
     <div class="main-wrapper">
-        <div style="text-align: center; background-color: rgba(100, 177, 222, 0.8); padding: 20px; border-radius: 50px; max-width: 300px;">
-            <img src="https://png.pngtree.com/png-vector/20210228/ourmid/pngtree-white-circle-background-png-image_2975665.jpg">
+        <div style="text-align: center; background-image: linear-gradient(45deg, rgba(230, 154, 207, 1) 0%, rgba(190, 140, 240, 1) 100%); padding: 20px; border-radius: 50px; max-width: 300px;">
+            <img id="preview" src="png.png" alt="Profile preview">
             <form>
-                <br><input type="file" style="text-align: center; background-color: rgb(22, 123, 186); color: rgb(255, 255, 255); padding: 10px 10px; border: none; border-radius: 5px;">
+                <br><input id="fileInput" type="file" accept="image/*" style="text-align: center; background-color: rgb(208, 46, 237); color: rgb(255, 255, 255); padding: 10px 10px; border: none; border-radius: 5px;">
             </form>
         </div>
-    <div>
-        <div style="text-align: left; background-color: rgba(190, 140, 240, 0.8); padding: 20px; border-radius: 50px; max-width: 400px;">
+        <div style="text-align: left; background-image: linear-gradient(45deg, rgba(230, 154, 207, 1) 0%, rgba(190, 140, 240, 1) 100%); padding: 20px; border-radius: 50px; max-width: 400px;">
             <h1><b>REGISTRATION</b></h1>
-            <p>Please fill out all required fields in the registration form with accurate information. Once completed, review your details and click Submit to finish your registration.</p>
+            <p style="color: rgb(128, 38, 126);">Please fill out all required fields in the registration form with accurate information. Once completed, review your details and click Submit to finish your registration.</p>
             <form>
                 <label>First Name</label><br>
                 <input id="value" type="text" placeholder="Input your First Name"><br><br>
@@ -76,9 +75,27 @@
             <label>
                 <br><input type="checkbox"> I accept the <a href="https://policies.google.com/terms?hl=en-US">Terms of Use and Privacy Policy</a>
             </label><br><br>
+            <form style="text-align:center;">
+                <br><button type="submit" style="background-color: rgb(208, 46, 237); color: rgb(0, 0, 0); padding: 10px 80px; border: none; border-radius: 5px; text-align: center;"><a href="confirmation.html" style="color: white; text-decoration: none;">Create my account</a></button>
+            </form>
         </div>
-        <script src="proj.js"></script>
-    </div>
+    </div><br>
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const previewImg = document.getElementById('preview');
+        if (fileInput && previewImg) {
+            fileInput.addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                if (file && file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        previewImg.src = e.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        }
+    </script>
     <footer class="footer">
         <p> Hermione Therese Paredes, and Andrea C. Zagala | 9 - Topaz &copy; 2026.</p>
     </footer>
