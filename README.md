@@ -3,3 +3,4 @@ ICT 9 Project Q3
 
 there were a lot of bugs and mistakes
 ts pmo
+hi sir i hate ict i hope you know that
