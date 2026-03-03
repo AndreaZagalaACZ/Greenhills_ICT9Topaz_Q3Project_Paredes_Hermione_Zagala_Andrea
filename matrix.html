@@ -11,7 +11,7 @@
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="matrix.html">Fare Matrix</a>
-            <a href="https://www.quartertotwelve.com/time/manila-ph/" target="_blank"">Schedule</a>
+            <a href="https://www.quartertotwelve.com/time/manila-ph/" target="_blank">Schedule</a>
             <input type="text" class="search" placeholder="Search...">
             <button class="search-btn" style="color: rgb(190, 140, 240); font-weight: bold;" onclick="location.reload()">Search</button>
             <a href="#" class="right">Book Now</a>
@@ -20,7 +20,23 @@
     </header>
     <div class="fare-container">
     <form>
-    <label for="locations">MRT Line 3 (North Avenue – Taft Avenue)</label>
+    <label for="locations">Pickup Location</label>
+    <select name="locations" id="locations">
+    <option value="North Avenue">North Avenue</option>
+    <option value="Quezon Avenue">Quezon Avenue</option>
+    <option value="Kamuning">Kamuning</option>
+    <option value="Araneta Center-Cubao">Araneta Center-Cubao</option>
+    <option value="Santolan-Annapolis">Santolan-Annapolis</option>
+    <option value="Ortigas">Ortigas</option>
+    <option value="Shaw Boulevard">Shaw Boulevard</option>
+    <option value="Boni">Boni</option>
+    <option value="Guadalupe">Guadalupe</option>
+    <option value="Buendia">Buendia</option>
+    <option value="Ayala">Ayala</option>
+    <option value="Magallanes">Magallanes</option>
+    <option value="Taft Avenue">Taft Avenue"</option>
+    </select>
+    <label for="locations">Drop Off Location</label>
     <select name="locations" id="locations">
     <option value="North Avenue">North Avenue</option>
     <option value="Quezon Avenue">Quezon Avenue</option>
