@@ -18,7 +18,9 @@
             <button type="submit" class="create-btn"><a href="#registration.html">Create my account</button>
         </nav>
     </header>
-    <label for="locations">MRT Line 3 (North Avenue – Taft Avenue)</label>
+    <div class="fare-container">
+    <form>
+           <label for="locations">MRT Line 3 (North Avenue – Taft Avenue)</label>
     <select name="locations" id="locations">
     <option value="North Avenue">North Avenue</option>
     <option value="Quezon Avenue">Quezon Avenue</option>
@@ -34,8 +36,6 @@
     <option value="Magallanes">Magallanes</option>
     <option value="Taft Avenue">Taft Avenue"</option>
     </select>
-    <div class="fare-container">
-    <form>
         <input type="number" id="base" placeholder="base fare (Php)" min="0" max="100"><br>
         <input type="number" id="discount" placeholder="discount %" min="0" max="100"><br>
         <input type="button" onclick="compute_fare()" value="Compute">
